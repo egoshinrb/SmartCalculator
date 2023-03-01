@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>676</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>676</width>
+    <height>502</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>676</width>
+    <height>502</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(176, 176, 176);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>380</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_atan">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>320</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>atan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_op_bracket">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>200</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cl_bracket">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_credit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>100</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Verdana&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>credit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sin">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>sin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_multi">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>380</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_x">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 22pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>380</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_log">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>log</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>cos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_acos">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>260</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>acos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>320</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_point">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>440</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_res">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>140</y>
+      <width>216</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>260</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_exp">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>440</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>260</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sqrt">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>380</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>sqrt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_in">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>661</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 24pt &quot;Times New Roman&quot;;
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  border: 1px solid gray;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius: 10;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_plus">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>260</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_asin">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>200</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>asin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_back">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>200</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>380</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>320</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_graph">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+	border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>graph</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_del">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>200</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>AC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sub">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>320</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_div">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>440</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: rgb(152, 143, 139);
+  color: white; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}background: purple;
+ border: outset;
+ border: 2px;
+ border: 10px;
+ border: beige;
+ font: bold 14px;
+ min-width: 10em;
+ padding:  6;</string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_deposit">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>100</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Verdana&quot;;</string>
+    </property>
+    <property name="text">
+     <string>deposit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_out">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>54</y>
+      <width>661</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 24pt &quot;Times New Roman&quot;;
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  border: 1px solid gray;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius: 10;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_0">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>440</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ln">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>ln</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>260</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tan">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>tan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>320</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color: white;
+  color: black; 
+  border: 2px solid rgb(84, 78, 74);
+border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(116, 108, 103);
+}
+
+QPushButton:pressed {
+    background-color: rgb(84, 78, 74);
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mod">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>440</y>
+      <width>108</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 600 14pt &quot;Verdana&quot;;
+  background-color:  rgb(255, 112, 36);
+  color: white; 
+  border: 3px solid rgb(255, 112, 36);
+ border-radius: 10;
+}
+
+QPushButton:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>mod</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_x">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>140</y>
+      <width>216</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 12pt &quot;Times New Roman&quot;;
+font: 700 12pt &quot;Verdana&quot;;</string>
+    </property>
+    <property name="decimals">
+     <number>6</number>
+    </property>
+    <property name="minimum">
+     <double>-9223372036854775808.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>9223372036854775808.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.000001000000000</double>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
